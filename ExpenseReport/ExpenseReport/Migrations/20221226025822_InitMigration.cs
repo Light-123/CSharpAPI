@@ -22,7 +22,7 @@ namespace ExpenseReport.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("MySql:ValueGenerationStrategy", MySqlValueGenerationStrategy.IdentityColumn),
                     ExpenseDate = table.Column<DateTime>(name: "Expense_Date", type: "datetime(6)", nullable: false),
-                    Amount = table.Column<string>(type: "varchar(50)", nullable: false)
+                    Amount = table.Column<decimal>(type: "decimal", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
                     Category = table.Column<string>(type: "varchar(50)", nullable: false)
                         .Annotation("MySql:CharSet", "utf8mb4"),
