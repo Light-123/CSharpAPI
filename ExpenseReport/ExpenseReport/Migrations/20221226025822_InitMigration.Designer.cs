@@ -28,7 +28,7 @@ namespace ExpenseReport.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    b.Property<string>("Amount")
+                    b.Property<decimal>("Amount")
                         .IsRequired()
                         .HasColumnType("varchar(50)");
 
